@@ -1,0 +1,59 @@
+/*RESET GENERAL DE ESTILOS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Shadows Into Light", cursive;
+}
+
+body {
+  background-color: #f5f4d8; /* gris claro */
+}
+
+/*ESTILOS CARDS INDEX */
+.card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.hover-card {
+  transition: transform 0.6s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-10px); /* sube la card */
+  box-shadow: 0 10px 20px rgb(255, 255, 95); /* sombra más fuerte */
+}
+
+
+/*ESTILO FOOTER*/
+.footer-personalizado {
+  background-color: #ff9148; /* gris azulado oscuro, sobrio y moderno */
+  color: #ffffff;
+}
+ 
+
+/* 📱 MEDIA QUERY PARA RESPONSIVIDAD EN PANTALLAS PEQUEÑAS DE MÓVILES */
+@media (max-width: 575.98px) {
+  h1, h2, h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .card {
+    margin-bottom: 1.5rem;
+  }
+
+  .container, .container-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
